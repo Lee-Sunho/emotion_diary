@@ -165,3 +165,19 @@ header .head_btn_right {
 .DiaryItem .emotion_img_wrapper_5 {
   background-color: #fd565f;
 }
+
+.DiaryItem .info_wrapper {
+  flex-grow: 1;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.DiaryItem .diary_date {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.DiaryItem .diary_content_preview {
+  font-size: 18px;
+}

@@ -1,4 +1,5 @@
 const DiaryItem = ({ id, emotion, content, date }) => {
+  const strDate = new Date(parseInt(date)).toLocaleDateString();
   return (
     <div className="DiaryItem">
       <div
@@ -11,7 +12,10 @@ const DiaryItem = ({ id, emotion, content, date }) => {
           src={process.env.PUBLIC_URL + `assets/emotion${emotion}.png`}
         ></img>
       </div>
-      <div></div>
+      <div className="info_wrapper">
+        <div className="diary_date">{strDate}</div>
+        <div className="diary_content_preview">{content.slice(0, 25)}</div>
+      </div>
       <div></div>
     </div>
   );
