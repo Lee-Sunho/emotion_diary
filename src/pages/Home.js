@@ -32,7 +32,6 @@ const Home = () => {
   }, [diaryList, curDate]);
 
   const increaseMonth = () => {
-    console.log(curDate);
     setCurDate(new Date(curDate.getFullYear(), curDate.getMonth() + 1));
   };
 
